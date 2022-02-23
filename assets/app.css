@@ -275,13 +275,6 @@ img {
   padding-bottom: var(--y-gap);
 }
 
-.main-title {
-  margin-bottom: calc(var(--y-gap) + 1rem);
-  font-size: 3rem;
-  font-weight: 400;
-  color: var(--lit);
-}
-
 .main-nav {
   display: flex;
   margin-top: 5rem;
