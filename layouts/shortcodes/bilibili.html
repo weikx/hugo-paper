@@ -1,0 +1,27 @@
+<style>
+  .bilibili-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+  }
+  .iframe-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<div class="bilibili-video-container">
+  <iframe 
+    src="//player.bilibili.com/player.html?bvid={{.Get 0 }}&page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}"
+    scrolling="no"
+    class="iframe-container"
+    frameborder="no"
+    framespacing="0"
+    allowfullscreen="true">
+  </iframe>
+</div>
