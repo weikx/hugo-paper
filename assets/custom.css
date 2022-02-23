@@ -1,1 +1,4 @@
 /* Place custom css here. */
+iframe {
+  background-color: #fff !important;
+}
