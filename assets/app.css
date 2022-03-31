@@ -432,6 +432,11 @@ img {
 .clipper-tip {
   opacity: .5;
 }
+.clipper-tip p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .post-content h1,
 .post-content h2,
