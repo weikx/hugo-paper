@@ -429,6 +429,10 @@ img {
   font-size: 2.2rem;
 }
 
+.clipper-tip {
+  opacity: .5;
+}
+
 .post-content h1,
 .post-content h2,
 .post-content h3,

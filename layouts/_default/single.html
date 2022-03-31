@@ -10,7 +10,16 @@
     </p>
     <h1>{{ .Title }}</h1>
   </header>
-  <section class="post-content">{{ .Content }}</section>
+  <section class="post-content">
+    {{ if or .Params.clipper .Params.source }}
+    <blockquote class="clipper-tip">
+      <p>🔗 原文链接：<a href="{{ .Params.source }}">{{ .Params.source }}</a></p>
+      <p>✂️ 剪藏用于个人学习，推荐访问原文链接</p>
+    </blockquote>
+    {{ end }}
+
+    {{ .Content }}
+  </section>
 
   <!-- Post Tags -->
   {{ if .Params.tags }}
